@@ -8,13 +8,18 @@ The solution integrates **SQL Server Management Studio (SSMS)** for data warehou
 
 ## Key Features  
 
+## Dataset 
+- [IT Incident Log Dataset from Kaggle was used](https://www.kaggle.com/datasets/shamiulislamshifat/it-incident-log-dataset) 
+
+
 ### 🏗️ Data Warehouse Design  
 - Designed a **star schema** for efficient query performance and insightful reporting.  
 - Fact tables store incident data, while dimension tables capture details such as time, users, teams, and incident categories.  
 
 ### 🔄 ETL Process with Pentaho  
-- **Extraction**: Sourced raw incident data from multiple systems.  
-- **Transformation**: Cleaned and enriched data (e.g., calculating average resolution times, categorizing incidents by priority).  
+- **Extraction**: Sourced raw incident data from [Kaggle](https://www.kaggle.com/datasets/shamiulislamshifat/it-incident-log-dataset).
+  
+- **Transformation**: Cleaned and enriched data using jupyter notebook (numpy and pandas libraries) (e.g., calculating average resolution times, categorizing incidents by priority).  
 - **Loading**: Structured data loaded into SQL Server data warehouse for reporting.  
 
 ### 📊 Interactive Dashboards in Power BI  
@@ -37,7 +42,7 @@ The solution integrates **SQL Server Management Studio (SSMS)** for data warehou
 
 ## Workflow  
 
-1. **Requirement Gathering**: Collaborated with stakeholders to define KPIs and business needs.  
+1. **Requirement Gathering**: Defined business needs.  
 2. **Data Modeling**: Designed and implemented a star schema optimized for analytics.  
 3. **ETL Process**:  
    - Extracted data from source systems.  
